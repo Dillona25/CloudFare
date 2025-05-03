@@ -4,8 +4,4 @@ CloudFare is a modern web application that helps travelers track flight prices, 
 
 # Tools Used
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react, js, bootstrap, sass" />
-  </a>
-</p>
+[![My Skills](https://skillicons.dev/icons?i=react, js, bootstrap, sass&theme=light)](https://skillicons.dev)
