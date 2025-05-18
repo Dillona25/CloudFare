@@ -1,4 +1,4 @@
-import "./styles/App.css";
+// Import index.scss when created
 
 function App() {
   return (
