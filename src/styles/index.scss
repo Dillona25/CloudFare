@@ -1,0 +1,26 @@
+@import "./variables";
+
+.max-w-fit {
+  max-width: fit-content;
+}
+
+.drop-shadow {
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+
+p,
+span {
+  font-family: "Inter", sans-serif;
+}
+
+.heading-xl {
+  font-size: 72px;
+}
+
+.heading-lg {
+  font-size: 60px;
+}
