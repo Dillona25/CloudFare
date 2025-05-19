@@ -26,7 +26,7 @@ export const Navbar = () => {
           </div>
           <div className="col-3 d-flex justify-content-end gap-3">
             <Button buttonVariant="primary" buttonText="Sign up" />
-            <Button buttonVariant="border" buttonText="Login" />
+            <Button buttonVariant="secondary" buttonText="Login" />
           </div>
         </div>
       </div>

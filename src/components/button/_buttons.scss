@@ -1,0 +1,24 @@
+.primary-btn {
+  background: linear-gradient(90deg, #4361ee, #3f37c9);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.4);
+  }
+}
+
+.secondary-btn {
+  border: 2px solid #4361ee;
+  color: #4361ee;
+  transition: all 0.3s ease;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #4361ee;
+    color: white;
+    transform: translateY(-3px);
+  }
+}
