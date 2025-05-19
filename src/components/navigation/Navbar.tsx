@@ -1,34 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartSimple, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartSimple,
+  faEnvelope,
+  faPlane,
+} from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../button/Button";
 
 export const Navbar = () => {
   return (
-    <div className="border-bottom drop-shadow">
-      <div className="container">
-        <div className="row align-items-center py-4">
-          <div className="col-3"></div>
-          <div className="col-6 d-flex justify-content-center gap-5">
-            <a
-              href=""
-              className="d-flex align-items-center gap-2 text-decoration-none text-body"
-            >
-              <span>How We Get Our Data</span>
-              <FontAwesomeIcon icon={faChartSimple} />
-            </a>
-            <a
-              href=""
-              className="d-flex align-items-center gap-2 text-decoration-none text-body"
-            >
-              <span>Get In Touch</span>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div>
-          <div className="col-3 d-flex justify-content-end gap-3">
-            <Button buttonVariant="primary" buttonText="Sign up" />
-            <Button buttonVariant="secondary" buttonText="Login" />
-          </div>
-        </div>
+    <div className="row justify-content-center pt-4 position-sticky">
+      <div className="navbar bg-light drop-shadow light-border col-auto rounded-5 border d-flex gap-4 align-items-center p-3">
+        <a className="navlink rounded-5 d-flex align-items-center gap-2 text-body text-decoration-none">
+          <span>Contact</span>
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+
+        <a className="navlink rounded-5 d-flex align-items-center gap-2 text-body text-decoration-none">
+          <span>Popular Routes</span>
+          <FontAwesomeIcon icon={faPlane} />
+        </a>
+
+        <a className="navlink rounded-5 d-flex align-items-center gap-2 text-body text-decoration-none">
+          <span>Data Integrity</span>
+          <FontAwesomeIcon icon={faChartSimple} />
+        </a>
+
+        <Button buttonVariant="primary" buttonText="Sign up" />
       </div>
     </div>
   );

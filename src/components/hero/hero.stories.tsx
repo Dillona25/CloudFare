@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { hero } from './hero';
+import { Hero } from "./hero";
 
 const meta = {
-  component: hero,
-} satisfies Meta<typeof hero>;
+  component: Hero,
+} satisfies Meta<typeof Hero>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {}
+  args: {},
 };

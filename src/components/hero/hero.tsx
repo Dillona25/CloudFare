@@ -1,11 +1,9 @@
 import { Button } from "../button/Button";
-import Navbar from "../navigation/Navbar";
 import Dashboard from "../../images/Dashboard Example.png";
 
-export const hero = () => {
+export const Hero = () => {
   return (
     <>
-      <Navbar />
       <section id="#hero">
         <div className="container">
           <div className="row justify-content-between">
