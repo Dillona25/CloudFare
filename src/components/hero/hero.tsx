@@ -1,12 +1,18 @@
 import { Button } from "../button/Button";
 import Dashboard from "../../images/Dashboard Example.png";
+import { RouteSearch } from "../route-search/RouteSearch";
 
-export const Hero = () => {
+interface HeroProps {
+  showGetStarted: boolean;
+  setShowGetStarted: (v: boolean) => void;
+}
+
+export const Hero = ({ showGetStarted, setShowGetStarted }: HeroProps) => {
   return (
     <>
       <section id="#hero">
         <div className="container">
-          <div className="row justify-content-between">
+          <div className="row justify-content-between pb-5">
             <div className="col-5">
               <div className="position-relative z-2 p-4">
                 <div className="hero-image-bg position-absolute w-100 h-100 rounded-4 z-1   "></div>
@@ -31,10 +37,15 @@ export const Hero = () => {
                 in reprehenderit in voluptate velit esse
               </p>
               <div className="d-flex gap-3">
-                <Button buttonVariant="secondary" buttonText="Get Started" />
+                <Button
+                  buttonVariant="secondary"
+                  buttonText="Get Started"
+                  onClick={() => setShowGetStarted(true)}
+                />
               </div>
             </div>
           </div>
+          <RouteSearch showGetStarted={showGetStarted} />
         </div>
       </section>
     </>

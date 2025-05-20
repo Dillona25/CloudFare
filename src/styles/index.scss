@@ -1,6 +1,7 @@
 @use "../components/button/buttons";
 @use "../components/hero/hero";
 @use "../components/navigation/navbar";
+@use "../components/route-search/route-search.scss";
 
 section {
   padding: 100px 0;
@@ -33,4 +34,8 @@ h1 {
 
 .letter-wide {
   letter-spacing: 2px;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }

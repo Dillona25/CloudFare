@@ -4,9 +4,15 @@ type props = {
   buttonVariant: string;
   buttonText: string;
   onClick?: MouseEventHandler;
+  className?: string;
 };
 
-export const Button = ({ buttonVariant, buttonText, onClick }: props) => {
+export const Button = ({
+  buttonVariant,
+  buttonText,
+  onClick,
+  className,
+}: props) => {
   // Button variant selection
   let variant;
   let commonClasses = "rounded-4 px-4 py-2";
@@ -17,7 +23,11 @@ export const Button = ({ buttonVariant, buttonText, onClick }: props) => {
   }
 
   return (
-    <button type="submit" onClick={onClick} className={`${variant}`}>
+    <button
+      type="submit"
+      onClick={onClick}
+      className={`${variant} ${className}`}
+    >
       {buttonText}
     </button>
   );

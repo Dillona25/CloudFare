@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+
+@keyframes slamIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-20px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) translateY(5px);
+  }
+  80% {
+    transform: scale(0.95) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes bobble {
+  0%,
+  100% {
+    transform: rotate(-3deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-3deg) translateY(-5px);
+  }
+}
+
+.inner-div {
+  background-color: $color-primary-alt;
+}
+
+.icon-container {
+  border-radius: 100%;
+  background-color: $color-primary;
+}
+
+.get-started-container {
+  display: none;
+  top: -50px;
+  left: -20px;
+  background: linear-gradient(135deg, #ffe2e6, #ffb3c6);
+  color: #4a154b;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.25rem;
+  max-width: 200px;
+  transform: rotate(-3deg);
+
+  &.active {
+    display: block;
+    animation: slamIn 0.5s ease-out, bobble 2.5s ease-in-out infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #ffb3c6;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
